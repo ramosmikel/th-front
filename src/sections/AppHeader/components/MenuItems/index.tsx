@@ -41,7 +41,7 @@ export const MenuItems = ({ viewer, setViewer }: Props) => {
     viewer.id && viewer.avatar ? (
       <SubMenu title={<Avatar src={viewer.avatar} />}>
         <Item key="/user">
-          <Link to={`/user/${viewer.avatar}`}>
+          <Link to={`/user/${viewer.id}`}>
             <UserOutlined />
             Profile
           </Link>
